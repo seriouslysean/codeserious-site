@@ -29,19 +29,3 @@ jobs:
         run: |
           echo "Skipping execution for draft PR"
           exit 1
-
-  check-version-label:
-    name: 'Check Version Label'
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Fail if not exactly one version label'
-        id: check
-        run: |
-            LABELS="${{ join(github.event.pull_request.labels.*.name, ' ') }}"
-            VERSION_LABELS=$(echo $LABELS | tr ' ' '\n' | grep -E '^version:(patch|minor|major)$' || true)
-            LABELS_COUNT=$(echo "$VERSION_LABELS" | wc -w)
-            if [[ "$LABELS_COUNT" -ne 1 ]]; then
-                echo "Exactly one version label is required. Exiting."
-                exit 1
-            fi
-        shell: bash

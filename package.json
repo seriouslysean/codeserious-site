@@ -1,5 +1,5 @@
 {
-	"name": "codeserious.com",
+	"name": "codeserious-site",
 	"version": "2.1.2",
 	"description": "Website for codeserious.com.",
 	"scripts": {
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/seriouslysean/codeserious.com.git"
+		"url": "git://github.com/seriouslysean/codeserious-site.git"
 	},
 	"author": {
 		"name": "Sean Kennedy",
@@ -24,9 +24,9 @@
 		"node": ">=18"
 	},
 	"bugs": {
-		"url": "https://github.com/seriouslysean/codeserious.com/issues"
+		"url": "https://github.com/seriouslysean/codeserious-site/issues"
 	},
-	"homepage": "https://github.com/seriouslysean/codeserious.com#readme",
+	"homepage": "https://github.com/seriouslysean/codeserious-site#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.7",
 		"@11ty/eleventy-img": "^3.1.1",

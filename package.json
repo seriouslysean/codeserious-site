@@ -5,6 +5,7 @@
 	"scripts": {
 		"_clean": "rimraf _site/*",
 		"build": "npm run _clean && npx @11ty/eleventy",
+		"lint": "oxlint --deny-warnings .",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
@@ -35,6 +36,7 @@
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
 		"luxon": "^3.7.2",
 		"markdown-it-anchor": "^10.0.0",
+		"oxlint": "^1.90.0",
 		"rimraf": "^5.0.5"
 	}
 }

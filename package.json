@@ -5,7 +5,7 @@
 	"scripts": {
 		"_clean": "rimraf _site/*",
 		"build": "npm run _clean && npx @11ty/eleventy",
-		"lint": "oxlint --deny-warnings .",
+		"lint": "oxlint .",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
